@@ -6,7 +6,7 @@
 #*   By: vquesnel <vquesnel@student.42.fr>          +#+  +:+       +#+        *#
 #*                                                +#+#+#+#+#+   +#+           *#
 #*   Created: 2016/03/08 23:29:46 by vquesnel          #+#    #+#             *#
-#*   Updated: 2016/03/23 00:36:47 by vquesnel         ###   ########.fr       *#
+#*   Updated: 2016/03/25 17:02:56 by vquesnel         ###   ########.fr       *#
 #*                                                                            *#
 #* ************************************************************************** *#
 
@@ -22,9 +22,9 @@ LIBS = -L libft/ -lft
 FLAGS = -Wall -Wextra -Werror
 
 $(NAME):	$(OBJS)
-	@make -C libft/ re
+	@make -C libft/
 	@gcc -o $(NAME) $(OBJS) $(LIBS)
-	@echo "Fillit compilation is ok"
+	@echo "\033[33;32mFillit has been created"
 
 $(OBJS): %.o: %.c
 	@gcc $(FLAGS) $(INCLUDES) -c $< -o $@
@@ -32,13 +32,14 @@ $(OBJS): %.o: %.c
 all:		$(NAME)
 
 clean:
-	rm -f	$(OBJS)
-	@echo "all files.o are deleted"
+	@make -C libft/ clean
+	@rm -f	$(OBJS)
+	@echo "\033[33;34mall fillit_files.o are deleted"
 
 fclean: clean
 	@rm -f	$(NAME)
 	@make -C libft/ fclean
-	@echo "$(NAME) is deleted"
+	@echo "\033[33;31m$(NAME) is deleted"
 
 re: fclean all
 

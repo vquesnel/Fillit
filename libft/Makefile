@@ -6,7 +6,7 @@
 #    By: vquesnel <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/03/19 17:36:29 by vquesnel          #+#    #+#              #
-#    Updated: 2016/03/24 15:25:50 by vquesnel         ###   ########.fr        #
+#*   Updated: 2016/03/25 16:58:54 by vquesnel         ###   ########.fr       *#
 #                                                                              #
 # **************************************************************************** #
 
@@ -84,14 +84,14 @@ $(NAME):
 	@gcc -Wall -Werror -Wextra -c $(SRC) -I $(HEADER)
 	@ar rc $(NAME) $(OBJ)
 	@ranlib $(NAME)
-	@echo "libft has been created"
+	@echo "\033[33;32mlibft has been created"
 
 clean:
 	@rm -rf $(OBJ)
-	@echo "all files.o are deleted"
+	@echo "\033[33;34mall libft_files.o are deleted"
 fclean: clean
 	@rm -rf $(NAME)
-	@echo "$(NAME) is deleted"
+	@echo "\033[33;31m$(NAME) is deleted"
 re: fclean all
 
 .PHONY: all clean fclean re
