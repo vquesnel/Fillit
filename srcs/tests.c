@@ -6,7 +6,7 @@
 /*   By: vquesnel <vquesnel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/03/08 23:27:11 by vquesnel          #+#    #+#             */
-/*   Updated: 2016/03/22 15:28:16 by vquesnel         ###   ########.fr       */
+/*   Updated: 2016/03/28 20:11:10 by vquesnel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -96,6 +96,8 @@ int			ft_get_size(char *map)
 			k++;
 		i++;
 	}
+	if (!k)
+		return (0);
 	if (j / k != 4)
 		return (1);
 	return (0);
