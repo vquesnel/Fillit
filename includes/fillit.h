@@ -6,7 +6,7 @@
 /*   By: vquesnel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/16 15:54:17 by vquesnel          #+#    #+#             */
-/*   Updated: 2016/03/24 15:34:46 by vquesnel         ###   ########.fr       */
+/*   Updated: 2016/03/28 13:33:00 by vquesnel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 # define FILLIT_H
 
 # include <fcntl.h>
-# include "includes/libft.h"
+# include "libft.h"
 
 /*
 ** T E S T S

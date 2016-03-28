@@ -6,7 +6,7 @@
 #*   By: vquesnel <vquesnel@student.42.fr>          +#+  +:+       +#+        *#
 #*                                                +#+#+#+#+#+   +#+           *#
 #*   Created: 2016/03/08 23:29:46 by vquesnel          #+#    #+#             *#
-#*   Updated: 2016/03/28 13:28:44 by vquesnel         ###   ########.fr       *#
+#*   Updated: 2016/03/28 13:32:42 by vquesnel         ###   ########.fr       *#
 #*                                                                            *#
 #* ************************************************************************** *#
 
@@ -17,7 +17,7 @@ SRCS = srcs/main.c srcs/solver.c srcs/tests.c \
 	   srcs/is_forms.c
 
 OBJS = $(SRCS:.c=.o)
-INCLUDES =-I libft -I includes
+INCLUDES = -I libft/includes -I includes
 LIBS = -L libft/ -lft
 FLAGS = -Wall -Wextra -Werror
 
