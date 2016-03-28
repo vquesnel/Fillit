@@ -6,7 +6,7 @@
 #*   By: vquesnel <vquesnel@student.42.fr>          +#+  +:+       +#+        *#
 #*                                                +#+#+#+#+#+   +#+           *#
 #*   Created: 2016/03/08 23:29:46 by vquesnel          #+#    #+#             *#
-#*   Updated: 2016/03/28 13:21:24 by vquesnel         ###   ########.fr       *#
+#*   Updated: 2016/03/28 13:28:44 by vquesnel         ###   ########.fr       *#
 #*                                                                            *#
 #* ************************************************************************** *#
 
@@ -24,7 +24,7 @@ FLAGS = -Wall -Wextra -Werror
 $(NAME):	$(OBJS)
 	@make -C libft/
 	@gcc -o $(NAME) $(OBJS) $(LIBS)
-	@echo "\033[32mFillit has been created\033[0m"
+	@echo "\033[32;1m$(NAME) has been created\033[0m"
 
 $(OBJS): %.o: %.c
 	@gcc $(FLAGS) $(INCLUDES) -c $< -o $@
