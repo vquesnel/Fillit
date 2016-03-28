@@ -6,7 +6,7 @@
 #*   By: vquesnel <vquesnel@student.42.fr>          +#+  +:+       +#+        *#
 #*                                                +#+#+#+#+#+   +#+           *#
 #*   Created: 2016/03/08 23:29:46 by vquesnel          #+#    #+#             *#
-#*   Updated: 2016/03/28 13:13:04 by vquesnel         ###   ########.fr       *#
+#*   Updated: 2016/03/28 13:21:24 by vquesnel         ###   ########.fr       *#
 #*                                                                            *#
 #* ************************************************************************** *#
 
@@ -34,7 +34,7 @@ all:		$(NAME)
 clean:
 	@make -C libft/ clean
 	@rm -f	$(OBJS)
-	@echo "\033[34mall fillit_files.o are deleted\033[0m"
+	@echo "\033[37mall fillit_files.o are deleted\033[0m"
 
 fclean: clean
 	@rm -f	$(NAME)
