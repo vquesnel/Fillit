@@ -6,7 +6,7 @@
 /*   By: vquesnel <vquesnel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/03/08 23:27:46 by vquesnel          #+#    #+#             */
-/*   Updated: 2016/03/23 12:50:17 by kwiessle         ###   ########.fr       */
+/*   Updated: 2016/03/28 20:16:40 by vquesnel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,9 +34,9 @@ void		set_color(char **map)
 	}
 }
 
-size_t		ft_tablen(char **buffer)
+int		ft_tablen(char **buffer)
 {
-	size_t	i;
+	int	i;
 
 	i = 0;
 	while (buffer[i])

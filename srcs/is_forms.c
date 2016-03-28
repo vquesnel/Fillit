@@ -6,19 +6,19 @@
 /*   By: vquesnel <vquesnel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/03/08 23:25:45 by vquesnel          #+#    #+#             */
-/*   Updated: 2016/03/22 15:27:48 by vquesnel         ###   ########.fr       */
+/*   Updated: 2016/03/28 20:15:48 by vquesnel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fillit.h"
 
-static size_t	*ft_set_tab(void)
+static int	*ft_set_tab(void)
 {
-	size_t		*tab;
-	size_t		i;
+	int		*tab;
+	int		i;
 
 	i = 0;
-	tab = (size_t *)malloc(sizeof(size_t) * 19);
+	tab = (int *)malloc(sizeof(int) * 19);
 	while (i < 7)
 	{
 		tab[i] = 0;
@@ -27,11 +27,11 @@ static size_t	*ft_set_tab(void)
 	return (tab);
 }
 
-static size_t	*ft_is_forms_1(char *map, char c)
+static int	*ft_is_forms_1(char *map, char c)
 {
-	size_t		*tab;
+	int		*tab;
 	char		*buf;
-	size_t		start;
+	int		start;
 
 	start = 0;
 	tab = ft_set_tab();
@@ -55,11 +55,11 @@ static size_t	*ft_is_forms_1(char *map, char c)
 	return (tab);
 }
 
-static size_t	*ft_is_forms_2(char *map, char c)
+static int	*ft_is_forms_2(char *map, char c)
 {
-	size_t		*tab;
+	int		*tab;
 	char		*buf;
-	size_t		start;
+	int		start;
 
 	start = 0;
 	tab = ft_is_forms_1(map, c);
@@ -83,11 +83,11 @@ static size_t	*ft_is_forms_2(char *map, char c)
 	return (tab);
 }
 
-static size_t	*ft_is_forms_3(char *map, char c)
+static int	*ft_is_forms_3(char *map, char c)
 {
-	size_t		*tab;
+	int		*tab;
 	char		*buf;
-	size_t		start;
+	int		start;
 
 	start = 0;
 	tab = ft_is_forms_2(map, c);
@@ -111,11 +111,11 @@ static size_t	*ft_is_forms_3(char *map, char c)
 	return (tab);
 }
 
-size_t			*ft_is_forms_4(char *map, char c)
+int			*ft_is_forms_4(char *map, char c)
 {
-	size_t		*tab;
+	int		*tab;
 	char		*buf;
-	size_t		start;
+	int		start;
 
 	start = 0;
 	tab = ft_is_forms_3(map, c);

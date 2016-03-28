@@ -6,15 +6,15 @@
 /*   By: vquesnel <vquesnel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/03/08 23:25:02 by vquesnel          #+#    #+#             */
-/*   Updated: 2016/03/22 15:27:24 by vquesnel         ###   ########.fr       */
+/*   Updated: 2016/03/28 20:15:07 by vquesnel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fillit.h"
 
-size_t		ft_is_o(char *map, char c)
+int		ft_is_o(char *map, char c)
 {
-	size_t	i;
+	int	i;
 
 	i = 0;
 	while (map[i])
@@ -28,9 +28,9 @@ size_t		ft_is_o(char *map, char c)
 	return (0);
 }
 
-size_t		ft_is_i(char *map, char c)
+int		ft_is_i(char *map, char c)
 {
-	size_t	i;
+	int	i;
 
 	i = 0;
 	while (map[i])
@@ -47,9 +47,9 @@ size_t		ft_is_i(char *map, char c)
 	return (0);
 }
 
-size_t		ft_is_z(char *map, char c)
+int		ft_is_z(char *map, char c)
 {
-	size_t	i;
+	int	i;
 
 	i = 0;
 	while (map[i])
@@ -66,9 +66,9 @@ size_t		ft_is_z(char *map, char c)
 	return (0);
 }
 
-size_t		ft_is_s(char *map, char c)
+int		ft_is_s(char *map, char c)
 {
-	size_t	i;
+	int	i;
 
 	i = 0;
 	while (map[i])
@@ -85,9 +85,9 @@ size_t		ft_is_s(char *map, char c)
 	return (0);
 }
 
-size_t		ft_is_t(char *map, char c)
+int		ft_is_t(char *map, char c)
 {
-	size_t	i;
+	int	i;
 
 	i = 0;
 	while (map[i])

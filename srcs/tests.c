@@ -6,16 +6,16 @@
 /*   By: vquesnel <vquesnel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/03/08 23:27:11 by vquesnel          #+#    #+#             */
-/*   Updated: 2016/03/28 20:11:10 by vquesnel         ###   ########.fr       */
+/*   Updated: 2016/03/28 20:16:17 by vquesnel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fillit.h"
 
-size_t		ft_4(char *map)
+int		ft_4(char *map)
 {
-	size_t	i;
-	size_t	j;
+	int	i;
+	int	j;
 
 	i = 0;
 	j = 0;
@@ -37,10 +37,10 @@ size_t		ft_4(char *map)
 	return (0);
 }
 
-size_t		ft_count_tetriminos(char *s)
+int		ft_count_tetriminos(char *s)
 {
-	size_t	i;
-	size_t	j;
+	int	i;
+	int	j;
 
 	i = 0;
 	j = 0;
@@ -61,7 +61,7 @@ size_t		ft_count_tetriminos(char *s)
 
 int			ft_get_char(char *map)
 {
-	size_t	i;
+	int	i;
 
 	i = 0;
 	while (map[i] != '\0')
@@ -76,10 +76,10 @@ int			ft_get_char(char *map)
 
 int			ft_get_size(char *map)
 {
-	size_t	k;
-	size_t	j;
-	size_t	l;
-	size_t	i;
+	int	k;
+	int	j;
+	int	l;
+	int	i;
 
 	i = 0;
 	k = 0;

@@ -6,7 +6,7 @@
 /*   By: vquesnel <vquesnel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/03/08 23:27:27 by vquesnel          #+#    #+#             */
-/*   Updated: 2016/03/22 15:28:25 by vquesnel         ###   ########.fr       */
+/*   Updated: 2016/03/28 20:16:29 by vquesnel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,10 +61,10 @@ int			set_tetriminos(char *tetriminos, int i, char *solution, int j)
 	return (hashnb);
 }
 
-size_t		ft_add_tab(size_t *tab)
+int		ft_add_tab(int *tab)
 {
-	size_t	i;
-	size_t	index;
+	int	i;
+	int	index;
 
 	i = 0;
 	index = 0;
