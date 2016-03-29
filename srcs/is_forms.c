@@ -6,7 +6,7 @@
 /*   By: vquesnel <vquesnel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/03/08 23:25:45 by vquesnel          #+#    #+#             */
-/*   Updated: 2016/03/28 20:15:48 by vquesnel         ###   ########.fr       */
+/*   Updated: 2016/03/29 11:33:01 by vquesnel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ static int	*ft_set_tab(void)
 static int	*ft_is_forms_1(char *map, char c)
 {
 	int		*tab;
-	char		*buf;
+	char	*buf;
 	int		start;
 
 	start = 0;
@@ -58,7 +58,7 @@ static int	*ft_is_forms_1(char *map, char c)
 static int	*ft_is_forms_2(char *map, char c)
 {
 	int		*tab;
-	char		*buf;
+	char	*buf;
 	int		start;
 
 	start = 0;
@@ -86,7 +86,7 @@ static int	*ft_is_forms_2(char *map, char c)
 static int	*ft_is_forms_3(char *map, char c)
 {
 	int		*tab;
-	char		*buf;
+	char	*buf;
 	int		start;
 
 	start = 0;
@@ -114,7 +114,7 @@ static int	*ft_is_forms_3(char *map, char c)
 int			*ft_is_forms_4(char *map, char c)
 {
 	int		*tab;
-	char		*buf;
+	char	*buf;
 	int		start;
 
 	start = 0;
