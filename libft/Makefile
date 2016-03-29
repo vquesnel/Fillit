@@ -6,7 +6,7 @@
 #    By: vquesnel <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/03/19 17:36:29 by vquesnel          #+#    #+#              #
-#*   Updated: 2016/03/28 13:20:07 by vquesnel         ###   ########.fr       *#
+#*   Updated: 2016/03/29 16:28:01 by vquesnel         ###   ########.fr       *#
 #                                                                              #
 # **************************************************************************** #
 
@@ -73,7 +73,6 @@ SRC =ft_atoi.c \
 	 ft_swap.c \
 	 ft_abs.c \
 	 ft_clear_tab.c \
-	 get_next_line.c
 
 HEADER = ./includes
 OBJ =  $(SRC:.c=.o)
