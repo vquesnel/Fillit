@@ -6,7 +6,7 @@
 /*   By: vquesnel <vquesnel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/03/08 23:27:11 by vquesnel          #+#    #+#             */
-/*   Updated: 2016/03/28 20:16:17 by vquesnel         ###   ########.fr       */
+/*   Updated: 2016/03/29 11:31:51 by vquesnel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,7 +59,7 @@ int		ft_count_tetriminos(char *s)
 	return (j);
 }
 
-int			ft_get_char(char *map)
+int		ft_get_char(char *map)
 {
 	int	i;
 
@@ -74,7 +74,7 @@ int			ft_get_char(char *map)
 	return (0);
 }
 
-int			ft_get_size(char *map)
+int		ft_get_size(char *map)
 {
 	int	k;
 	int	j;

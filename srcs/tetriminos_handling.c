@@ -6,15 +6,15 @@
 /*   By: vquesnel <vquesnel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/03/08 23:27:27 by vquesnel          #+#    #+#             */
-/*   Updated: 2016/03/28 20:16:29 by vquesnel         ###   ########.fr       */
+/*   Updated: 2016/03/29 11:32:35 by vquesnel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fillit.h"
 
-void		reset_tetriminos(char *tetriminos)
+void	reset_tetriminos(char *tetriminos)
 {
-	int		i;
+	int	i;
 
 	i = 0;
 	while (tetriminos[i])
@@ -25,9 +25,9 @@ void		reset_tetriminos(char *tetriminos)
 	}
 }
 
-void		reset_all_tetriminos(char **tetriminos)
+void	reset_all_tetriminos(char **tetriminos)
 {
-	int		i;
+	int	i;
 
 	i = 0;
 	while (tetriminos[i])
@@ -37,10 +37,10 @@ void		reset_all_tetriminos(char **tetriminos)
 	}
 }
 
-int			set_tetriminos(char *tetriminos, int i, char *solution, int j)
+int		set_tetriminos(char *tetriminos, int i, char *solution, int j)
 {
-	int		hashnb;
-	int		len;
+	int	hashnb;
+	int	len;
 
 	hashnb = 0;
 	len = 0;
