@@ -6,7 +6,7 @@
 /*   By: vquesnel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/16 15:54:17 by vquesnel          #+#    #+#             */
-/*   Updated: 2016/03/28 20:17:10 by vquesnel         ###   ########.fr       */
+/*   Updated: 2016/04/06 14:23:41 by vquesnel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,25 +20,25 @@
 ** T E S T S
 */
 
-int	ft_4(char *map);
-int	ft_count_tetriminos(char *s);
+int		ft_4(char *map);
+int		ft_count_tetriminos(char *s);
 int		ft_get_char(char *map);
 int		ft_get_size(char *map);
-int	ft_is_o(char *map, char c);
-int	ft_is_i(char *map, char c);
-int	ft_is_z(char *map, char c);
-int	ft_is_s(char *map, char c);
-int	ft_is_t(char *map, char c);
-int	ft_is_l(char *map, char c);
-int	ft_is_j(char *map, char c);
-int	*ft_is_forms_4(char *map, char c);
-int	ft_add_tab(int *map);
+int		ft_is_o(char *map, char c);
+int		ft_is_i(char *map, char c);
+int		ft_is_z(char *map, char c);
+int		ft_is_s(char *map, char c);
+int		ft_is_t(char *map, char c);
+int		ft_is_l(char *map, char c);
+int		ft_is_j(char *map, char c);
+int		*ft_is_forms_4(char *map, char c);
+int		ft_add_tab(int *map);
 
 /*
 ** T O O L S
 */
 
-int	ft_tablen(char **buffer);
+int		ft_tablen(char **buffer);
 char	**read_file(int fd);
 void	set_color(char **tetriminos);
 
