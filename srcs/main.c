@@ -6,7 +6,7 @@
 /*   By: vquesnel <vquesnel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/03/08 23:26:13 by vquesnel          #+#    #+#             */
-/*   Updated: 2016/04/06 14:22:47 by vquesnel         ###   ########.fr       */
+/*   Updated: 2016/03/28 15:14:40 by vquesnel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,8 +27,8 @@ int		main(int ac, char **av)
 
 	if (ac != 2)
 	{
-		ft_putstr("usage :	./fillit <file_name>\n	one file_name needed to \
-run fillit.\n");
+		ft_putstr("usage : ./fillit <File_name>\n \
+	Use only one to run fillit\n");
 		return (0);
 	}
 	fd = open(av[1], O_RDONLY);

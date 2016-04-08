@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vquesnel <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: kwiessle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/11/25 11:57:22 by vquesnel          #+#    #+#             */
-/*   Updated: 2015/11/27 12:40:07 by vquesnel         ###   ########.fr       */
+/*   Created: 2015/01/19 14:45:14 by kwiessle          #+#    #+#             */
+/*   Updated: 2015/10/13 11:20:47 by kwiessle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,9 @@ char	*ft_strncpy(char *dst, const char *src, size_t n)
 {
 	size_t		i;
 
+	i = 0;
 	if (!dst && !src)
 		return (NULL);
-	i = 0;
 	ft_bzero(dst, n);
 	while (src[i] && i < n)
 	{

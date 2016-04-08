@@ -3,18 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vquesnel <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: kwiessle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/12/01 17:11:29 by vquesnel          #+#    #+#             */
-/*   Updated: 2016/03/19 17:36:19 by vquesnel         ###   ########.fr       */
+/*   Created: 2015/10/30 14:59:29 by kwiessle          #+#    #+#             */
+/*   Updated: 2015/12/17 14:49:07 by kwiessle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <limits.h>
 
-static	int		ft_int_len(int n)
+static int		ft_int_len(int n)
 {
 	int		q;
 	int		i;
@@ -39,27 +37,27 @@ char			*ft_itoa(int n)
 {
 	int		q;
 	int		len;
-	char	*str;
+	char	*toa;
 
 	len = ft_int_len(n);
-	str = (char *)malloc(sizeof(char) * len + 1);
-	if (n == INT_MIN)
+	toa = (char *)malloc(sizeof(char) * (len + 1));
+	if (n == -2147483648)
 		return (ft_strdup("-2147483648"));
-	if (n == 0 || !str)
+	if (n == 0 || !toa)
 		return (ft_strdup("0"));
 	if (n < 0)
 	{
-		str[0] = '-';
+		toa[0] = '-';
 		n = -n;
 	}
-	str[len] = '\0';
+	toa[len] = '\0';
 	while (n > 0)
 	{
-		str[len - 1] = n % 10 + '0';
+		toa[len - 1] = n % 10 + '0';
 		q = n % 10;
 		n = n - q;
 		n = n / 10;
 		len--;
 	}
-	return (str);
+	return (toa);
 }

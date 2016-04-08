@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vquesnel <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: kwiessle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/11/25 11:43:21 by vquesnel          #+#    #+#             */
-/*   Updated: 2015/11/27 12:33:50 by vquesnel         ###   ########.fr       */
+/*   Created: 2015/11/23 17:58:14 by kwiessle          #+#    #+#             */
+/*   Updated: 2015/11/23 17:58:17 by kwiessle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,5 @@ int		ft_isalpha(int c)
 		return (1);
 	if (c > 96 && c < 123)
 		return (1);
-	else
-		return (0);
+	return (0);
 }

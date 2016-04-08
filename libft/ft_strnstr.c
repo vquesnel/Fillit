@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vquesnel <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: kwiessle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/11/27 12:40:24 by vquesnel          #+#    #+#             */
-/*   Updated: 2015/11/27 15:54:03 by vquesnel         ###   ########.fr       */
+/*   Created: 2015/11/23 18:31:32 by kwiessle          #+#    #+#             */
+/*   Updated: 2015/12/17 14:21:54 by kwiessle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,20 +14,20 @@
 
 char	*ft_strnstr(const char *s1, const char *s2, size_t n)
 {
-	char	*cpy;
-	char	*buf;
-	size_t	length;
+	char		*tmp;
+	char		*mem;
+	size_t		size;
 
-	buf = (char *)(s1 + n);
-	length = ft_strlen(s2);
-	cpy = (char *)s1;
-	if (!s1 || !s2 || !length)
+	mem = (char *)(s1 + n);
+	size = ft_strlen(s2);
+	tmp = (char *)s1;
+	if (!size)
 		return ((char *)s1);
-	while ((cpy = ft_strchr(cpy, *s2)) && cpy <= buf)
+	while ((tmp = ft_strchr(tmp, *s2)) && tmp <= mem)
 	{
-		if ((cpy + length <= buf) && !ft_strncmp(cpy, s2, length))
-			return (cpy);
-		cpy++;
+		if ((tmp + size <= mem) && !ft_strncmp(tmp, s2, size))
+			return (tmp);
+		tmp++;
 	}
 	return (NULL);
 }

@@ -3,23 +3,23 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strclr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vquesnel <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: kwiessle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/11/27 16:33:02 by vquesnel          #+#    #+#             */
-/*   Updated: 2015/12/01 19:09:22 by vquesnel         ###   ########.fr       */
+/*   Created: 2015/01/27 16:17:59 by kwiessle          #+#    #+#             */
+/*   Updated: 2015/01/27 16:24:57 by kwiessle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_strclr(char *str)
+void	ft_strclr(char *s)
 {
-	if (str)
+	int		i;
+
+	i = 0;
+	while (s && s[i] != '\0')
 	{
-		while (*str != '\0')
-		{
-			*str = '\0';
-			str++;
-		}
+		s[i] = '\0';
+		i++;
 	}
 }

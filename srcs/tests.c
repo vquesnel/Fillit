@@ -6,16 +6,16 @@
 /*   By: vquesnel <vquesnel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/03/08 23:27:11 by vquesnel          #+#    #+#             */
-/*   Updated: 2016/03/29 11:31:51 by vquesnel         ###   ########.fr       */
+/*   Updated: 2016/04/08 13:12:05 by vquesnel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fillit.h"
 
-int		ft_4(char *map)
+size_t		ft_4(char *map)
 {
-	int	i;
-	int	j;
+	size_t	i;
+	size_t	j;
 
 	i = 0;
 	j = 0;
@@ -37,10 +37,10 @@ int		ft_4(char *map)
 	return (0);
 }
 
-int		ft_count_tetriminos(char *s)
+size_t		ft_count_tetriminos(char *s)
 {
-	int	i;
-	int	j;
+	size_t	i;
+	size_t	j;
 
 	i = 0;
 	j = 0;
@@ -59,9 +59,9 @@ int		ft_count_tetriminos(char *s)
 	return (j);
 }
 
-int		ft_get_char(char *map)
+int			ft_get_char(char *map)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
 	while (map[i] != '\0')
@@ -74,12 +74,12 @@ int		ft_get_char(char *map)
 	return (0);
 }
 
-int		ft_get_size(char *map)
+int			ft_get_size(char *map)
 {
-	int	k;
-	int	j;
-	int	l;
-	int	i;
+	size_t	k;
+	size_t	j;
+	size_t	l;
+	size_t	i;
 
 	i = 0;
 	k = 0;
@@ -97,7 +97,7 @@ int		ft_get_size(char *map)
 		i++;
 	}
 	if (!k)
-		return (0);
+		return (1);
 	if (j / k != 4)
 		return (1);
 	return (0);

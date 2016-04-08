@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vquesnel <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: kwiessle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/12/01 17:23:56 by vquesnel          #+#    #+#             */
-/*   Updated: 2016/03/22 13:38:09 by vquesnel         ###   ########.fr       */
+/*   Created: 2015/03/31 16:58:58 by kwiessle          #+#    #+#             */
+/*   Updated: 2015/12/17 14:13:14 by kwiessle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,22 +14,25 @@
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	char	*new;
-	int		i;
-	int		j;
+	char			*ns;
+	unsigned int	i;
+	unsigned int	j;
 
-	i = -1;
-	if (s1 && s2)
+	ns = ft_strnew(ft_strlen(s1) + ft_strlen(s2));
+	if (!s1 || !s2 || !ns)
+		return (NULL);
+	i = 0;
+	j = 0;
+	while (s1[i] != '\0')
 	{
-		new = ft_strnew(ft_strlen(s1) + ft_strlen(s2));
-		if (!new)
-			return (NULL);
-		while (s1[++i])
-			new[i] = s1[i];
-		j = -1;
-		while (s2[++j])
-			new[i + j] = s2[j];
-		return (new);
+		ns[i] = s1[i];
+		i++;
 	}
-	return (NULL);
+	while (s2[j] != '\0')
+	{
+		ns[i + j] = s2[j];
+		j++;
+	}
+	ns[i + j] = '\0';
+	return (ns);
 }
