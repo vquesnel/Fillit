@@ -24,7 +24,7 @@ FLAGS = -Wall -Wextra -Werror
 $(NAME):	$(OBJS)
 	@make -C libft/ re
 	@gcc -o $(NAME) $(OBJS) $(LIBS)
-	@echo "\033[32;1mComplitation ok\033[0m"
+	@echo "\033[32;1mReady to fillit?\033[0m"
 
 $(OBJS): %.o: %.c
 	@gcc $(FLAGS) $(INCLUDES) -c $< -o $@
